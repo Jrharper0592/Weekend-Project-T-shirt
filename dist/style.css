@@ -843,3 +843,13 @@ abbr[title]:hover {
  */
 body {
   transition: opacity .25s ease; }
+
+.Container {
+  min-height: 600px;
+  position: relative; }
+
+.rotate {
+  position: relative;
+  border-width: 1px;
+  display: inline-block;
+  min-height: 20px; }
