@@ -846,10 +846,67 @@ body {
 
 .Container {
   min-height: 600px;
-  position: relative; }
+  position: relative;
+  border: 2px solid blue; }
+
+.grid1 {
+  min-height: 600px; }
+
+.cell {
+  max-width: 30%;
+  max-height: 600px;
+  border: 2px solid blue; }
+  .cell .Shirt {
+    max-width: 100%;
+    min-height: 300px; }
+  .cell table {
+    width: 100%;
+    table-layout: fixed;
+    text-align: center;
+    border: 1px solid blue; }
+
+td {
+  position: relative;
+  line-height: 50px;
+  border: 2px solid blue;
+  cursor: pointer; }
+
+.click:hover {
+  background-color: blue; }
+
+.click:active {
+  background-color: red; }
+
+.items {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  max-width: 30px; }
+
+.Roto {
+  max-height: 25px;
+  max-width: 25px; }
 
 .rotate {
   position: relative;
-  border-width: 1px;
+  border-width: 2px;
   display: inline-block;
-  min-height: 20px; }
+  max-height: 30px;
+  float: right;
+  max-width: 30px;
+  text-align: center;
+  border: 2px solid blue;
+  cursor: pointer; }
+  .rotate :hover {
+    background-color: blue; }
+  .rotate :active {
+    background-color: red; }
+
+.new {
+  color: blue;
+  float: left; }
+
+.price {
+  color: blue;
+  float: right; }

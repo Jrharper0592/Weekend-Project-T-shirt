@@ -22,7 +22,6 @@
 /**
  * GRIDS
  */
-
 .grid {
     width: 100%;
     display: block;
@@ -58,23 +57,81 @@ body {
     transition: opacity .25s ease;
 }
 
+
+
+
+
 .Container {
     min-height: 600px;
     position: relative;
-    
+    border: 2px solid blue;
 }
 .grid1 {
-
+        min-height: 600px;
+}
+.cell {
+    max-width: 30%;
+    max-height: 600px;
+    border: 2px solid blue;
     
 
+.Shirt {
+        max-width: 100%;
+        min-height: 300px;
+    }
+    table {
+        width: 100%;
+        table-layout: fixed;
+        text-align: center;
+        border: 1px solid blue;
+    }
 }
+td  {
+    position:relative;
+    line-height: 50px;
+    border: 2px solid blue;
+    cursor: pointer;
+}
+.click:hover {background-color:blue;}
+
+.click:active {background-color:red;}
+
+.items {
+    position: absolute;
+    top: 50%;
+    left:  50%;
+    transform: translateX(-50%) translateY(-50%);
+    max-width: 30px;
+}
+
+.Roto {
+    max-height: 25px;
+    max-width: 25px;
+}
+
 .rotate {
     position: relative;
-    border-width:1px;
+    border-width:2px;
     display: inline-block;
-    min-height: 20px;
-    }
+    max-height: 30px;
+    float: right;
+    max-width: 30px;
+    text-align: center;
+    border: 2px solid blue;
+    :hover {background-color: blue;}
+    :active {background-color:red;}
+    cursor: pointer;
+}
 
+.new {
+    color: blue;
+    float:left;
+}
+
+.price {
+    color: blue;
+    float:right;
+}
 
 
 
